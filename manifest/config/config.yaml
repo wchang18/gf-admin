@@ -1,0 +1,22 @@
+server:
+  address:     ":8001"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level : "all"
+  stdout: true
+
+# Redis 配置
+redis:
+  default:
+    address: 127.0.0.1:16379
+    db: 1
+    pass: "123456"
+
+# mysql
+database:
+  default:
+    link:  "mysql:root:root001@tcp(127.0.0.1:3306)/govern"
+    debug: true
+
